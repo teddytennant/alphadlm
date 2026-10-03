@@ -1,0 +1,21 @@
+[project]
+name = "alphadlm"
+version = "0.1.0"
+description = "Sequence-level alpha loss for a factorized masked diffusion denoiser"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "jax",
+    "jaxlib",
+    "pytest",
+]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
